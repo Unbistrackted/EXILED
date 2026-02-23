@@ -50,6 +50,11 @@ namespace Exiled.API.Features.Hazards
         public EnvironmentalHazard Base { get; }
 
         /// <summary>
+        /// Gets or sets the <see cref="Features.Effect"/> associated with the current Hazard.
+        /// </summary>
+        public Effect Effect { get; set; }
+
+        /// <summary>
         /// Gets the <see cref="HazardType"/> associated with the current Hazard.
         /// </summary>
         public virtual HazardType Type { get; } = HazardType.Unknown;

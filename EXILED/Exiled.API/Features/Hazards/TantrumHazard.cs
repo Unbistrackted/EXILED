@@ -28,6 +28,7 @@ namespace Exiled.API.Features.Hazards
             : base(hazard)
         {
             Base = hazard;
+            Effect = new Effect(EffectType.Stained, 1);
         }
 
         /// <summary>

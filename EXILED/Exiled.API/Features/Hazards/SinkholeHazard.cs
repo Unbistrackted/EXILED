@@ -23,6 +23,7 @@ namespace Exiled.API.Features.Hazards
             : base(hazard)
         {
             Base = hazard;
+            Effect = new Effect(EffectType.SinkHole, 1);
         }
 
         /// <summary>

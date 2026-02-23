@@ -25,6 +25,7 @@ namespace Exiled.API.Features.Hazards
             : base(hazard)
         {
             Base = hazard;
+            Effect = new Effect(EffectType.AmnesiaVision, Base._amnesiaDuration);
             Ability = Base._cloud;
             Owner = Player.Get(Ability.Owner);
         }
